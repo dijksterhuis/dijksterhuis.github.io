@@ -15,33 +15,43 @@ body {
   font-size:100%;
 }
 
-.smallblock {
+.block {
   width:100%;
-  height:900px;
+  height:875px;
 }
 
 .bigblock {
   width:100%;
-  height:1800px;
+  height:1400px;
 }
 
 .command {
   position:sticky;
   position:-webkit-sticky;
-  z-index:-5;
+  z-index:20;
   top:0;
   text-align:right;
   padding-left:15%;
 }
 
-.result {
+.smallresult {
   width:100%;
   z-index:-20;
   text-align:left;
   position:sticky;
   position:-webkit-sticky;
-  padding-top:50%;
-  padding-bottom:50%;
+  padding-top:5%;
+  padding-bottom:5%;
+  padding-left:1%;
+  padding-right:1%;
+  top:0;
+}
+
+.bigresult {
+  width:100%;
+  z-index:-25;
+  padding-top:5%;
+  padding-bottom:5%;
   padding-left:1%;
   padding-right:1%;
   top:0;
@@ -52,6 +62,25 @@ body {
   font-size:100%;
   text-align:left;
   font-weight:1000;
+}
+
+.mixcloud {
+  width:51%; 
+  height:10%;
+  padding-left: 1%; 
+  padding-right: 1%; 
+  padding-top:5%;
+  border:0;
+  z-index:-30;
+}
+
+.clouds {
+  padding-left: 1%; 
+  padding-right: 1%; 
+  height: 400px;
+  width: 51%; 
+  border:0;
+  z-index:-30;
 }
 
 .w3-bordered {
@@ -66,26 +95,30 @@ body {
 </style
 
 <body>
-  <div class="w3-container w3-left" style="background-color:yellow; position: fixed;top: 0; width: 100%; z-index:-10;">
+  <div class="w3-container w3-left" style="background-color:yellow; position: fixed;top: 0; width: 100%; z-index:5;">
     <br>
     <h1 class="heading" style="text-align:left">[dijksterhuis@dundee ~] $:</h1>
     <br>
   </div>
   
-  <div class ="smallblock">
+  <div class ="block">
     <div class="command">
       <br>
       <h1 class="subheading">login</h1>
     </div>
+    <div class="smallresult">
+        <p> login: dijksterhuis</p>
+        <p> Password: </p>
+    </div>
   </div>
   
-  <div class ="bigblock">
+  <div class ="block">
     <div class="command">
       <br>
       <h1 class="subheading">whoami</h1>
     </div>
   
-    <div class="result">
+    <div class="smallresult">
         <p> PhD research candidate @ University of Dundee</p>
         <p> Researching the security of Audio Recognition models</p>
         <p> Makes weird electronic music & ambient-ish mixtape things</p>
@@ -94,13 +127,13 @@ body {
     <br>
   </div>
   
-  <div class ="bigblock">
+  <div class ="block">
     <div class="command">
       <br>
       <h1 class="subheading">mail | lynx</h1>
     </div>
   
-    <div class="result">
+    <div class="smallresult">
       <p>Mail ::: <a style="color:#666600" href="mailto:michael.l.robeson@gmail.com">General</a> /// <a style="color:#666600" href="mailto:mrobeson@dundee.ac.uk">University</a> /// <a style="color:#666600" href="mailto:dijksterhuis.music@gmail.com">Music</a></p>
       <p>GitHub ::: <a style="color:#666600" href="https://github.com/dijksterhuis">dijksterhuis</a></p>
       <p>Stack Overflow ::: <a style="color:#666600" href="https://stackoverflow.com/users/5945794/dijksterhuis">dijksterhuis</a></p>
@@ -111,23 +144,38 @@ body {
   <br>
   </div>
   
-  <div class="biggerblock">
+  <div class="bigblock">
     <div class="command">
       <br>
       <h1 class="subheading">play</h1>
     </div>  
   
-    <div class="result">
-      <iframe style="width:98%; height:20%;padding-left: 1%; padding-right: 1%;" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F" frameborder="0" ></iframe>
-      <br>
-      <iframe style="padding-left: 1%; padding-right: 1%; border: 0; width: 49%; height: 250px;" src="https://bandcamp.com/EmbeddedPlayer/album=1434351241/size=large/bgcol=ffffff/linkcol=666600/artwork=small/transparent=true/" seamless><a href="http://dijksterhuis.bandcamp.com/album/lessself">Lessself by Dijksterhuis</a></iframe><iframe style="width:49%;height:250px;padding-left: 1%; padding-right: 1%;scrolling:yes;border:0;allow:autoplay;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/441228&color=%23666600&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <div class="bigresult">
+<iframe class="mixcloud" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F"></iframe>
+<iframe class="clouds" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/441228&color=%23666600&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        
+<br><br><br><br><br>
+        
+        <iframe class="clouds" src="https://bandcamp.com/EmbeddedPlayer/album=1434351241/size=large/bgcol=ffffff/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="http://dijksterhuis.bandcamp.com/album/lessself">Lessself by Dijksterhuis</a></iframe>
+        
     </div>
   </div>
-  <div class="smallblock">
+  <div class="block">
     <div class="command">
       <br>
-      <h1 class="subheading">quit</h1>
+      <h1 class="subheading">logout</h1>
     </div>
+    
+    <div class="smallresult">
+        <p> Saving session...</p>
+        <p> ...copying shared history...</p>
+        <p> ...saving history...truncating history files...</p>
+        <p> ...completed.</p>
+        <br>
+        <p> [Process completed]</p>
+    </div>
+
+    
     </div>
   
 </body>
