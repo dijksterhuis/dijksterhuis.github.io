@@ -12,70 +12,123 @@ body {
 
 .heading{
   font-family: 'Lucida Console', Monaco, monospace;
-  font-size:200%;
+  font-size:100%;
+}
+
+.smallblock {
+  width:100%;
+  height:900px;
+}
+
+.bigblock {
+  width:100%;
+  height:1800px;
+}
+
+.command {
+  position:sticky;
+  position:-webkit-sticky;
+  z-index:-5;
+  top:0;
+  text-align:right;
+  padding-left:15%;
+}
+
+.result {
+  width:100%;
+  z-index:-20;
+  text-align:left;
+  position:sticky;
+  position:-webkit-sticky;
+  padding-top:50%;
+  padding-bottom:50%;
+  padding-left:1%;
+  padding-right:1%;
+  top:0;
 }
 
 .subheading{
   font-family: 'Lucida Console', Monaco, monospace;
-  font-size:200%;
+  font-size:100%;
   text-align:left;
-  padding-left:15px;
+  font-weight:1000;
 }
 
 .w3-bordered {
   border-bottom:1px solid #616161
 }
+
+.bottomContent
+{
+    position:relative;
+    bottom: 0;
+}
 </style
 
 <body>
-  <div class="w3-container w3-left w3-yellow" style="position: fixed;top: 10; width: 100%; z-index:-1;">
+  <div class="w3-container w3-left" style="background-color:yellow; position: fixed;top: 0; width: 100%; z-index:-10;">
     <br>
     <h1 class="heading" style="text-align:left">[dijksterhuis@dundee ~] $:</h1>
     <br>
   </div>
   
-  <div class="w3-container w3-right" style="width:71%;height:30%;">
-    <br>
-    <h1 class="subheading">whoami</h1>
-    <br>
-    <br>
-  </div>
-  
-  <div class="w3-container w3-left" style="width:100%;height:600px;z-index:-2;position:relative;">
-      <p style="z-index:-2;">PhD research candidate @ University of Dundee</p>
-      <p>Researching the security of Audio Recognition models</p>
-      <p>Makes weird electronic music & ambient-ish mixtape things</p>
+  <div class ="smallblock">
+    <div class="command">
+      <br>
+      <h1 class="subheading">login</h1>
     </div>
   </div>
   
-  <div class="w3-container w3-right" style="width:71%;height:30%;">
-    <br>
-    <h1 class="subheading">mail | lynx</h1>
+  <div class ="bigblock">
+    <div class="command">
+      <br>
+      <h1 class="subheading">whoami</h1>
+    </div>
+  
+    <div class="result">
+        <p> PhD research candidate @ University of Dundee</p>
+        <p> Researching the security of Audio Recognition models</p>
+        <p> Makes weird electronic music & ambient-ish mixtape things</p>
+    </div>
     <br>
     <br>
   </div>
   
-  <div class="w3-container w3-left" style="width:100%;height:600px;z-index:-2;position:relative;">
-    <p>Mail ::: <a style="color:#666600" href="mailto:michael.l.robeson@gmail.com">General</a> /// <a style="color:#666600" href="mailto:mrobeson@dundee.ac.uk">University</a> /// <a style="color:#666600" href="mailto:dijksterhuis.music@gmail.com">Music</a></p>
-    <p>GitHub ::: <a style="color:#666600" href="https://github.com/dijksterhuis">dijksterhuis</a></p>
-    <p>Stack Overflow ::: <a style="color:#666600" href="https://stackoverflow.com/users/5945794/dijksterhuis">dijksterhuis</a></p>
-    <!--<p>Linkedin ::: <a style="color:#666600" href="https://www.linkedin.com/in/mikerobeson/">mikerobeson</a></p>-->
+  <div class ="bigblock">
+    <div class="command">
+      <br>
+      <h1 class="subheading">mail | lynx</h1>
+    </div>
   
+    <div class="result">
+      <p>Mail ::: <a style="color:#666600" href="mailto:michael.l.robeson@gmail.com">General</a> /// <a style="color:#666600" href="mailto:mrobeson@dundee.ac.uk">University</a> /// <a style="color:#666600" href="mailto:dijksterhuis.music@gmail.com">Music</a></p>
+      <p>GitHub ::: <a style="color:#666600" href="https://github.com/dijksterhuis">dijksterhuis</a></p>
+      <p>Stack Overflow ::: <a style="color:#666600" href="https://stackoverflow.com/users/5945794/dijksterhuis">dijksterhuis</a></p>
+      <!--<p>Linkedin ::: <a style="color:#666600" href="https://www.linkedin.com/in/mikerobeson/">mikerobeson</a></p>-->
+  
+    </div>
+  <br>
+  <br>
   </div>
   
-  <div class="w3-container w3-right" style="width:71%;height:30%;">
-    <br>
-    <h1 class="subheading">play</h1>
-    <br>
-    <br>
-  </div>
+  <div class="biggerblock">
+    <div class="command">
+      <br>
+      <h1 class="subheading">play</h1>
+    </div>  
   
-  <div class="w3-container w3-left" style="width:70%;height:703px;z-index:-2;position:relative;">
-    <!-- Mixcloud -->
-    <iframe width="90%" height="20%" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F" frameborder="0" ></iframe>
-    <!-- Bandcamp -->
-<iframe style="border: 0; width: 45%; height: 67%;" src="https://bandcamp.com/EmbeddedPlayer/album=1434351241/size=large/bgcol=ffffff/linkcol=666600/artwork=small/transparent=true/" seamless><a href="http://dijksterhuis.bandcamp.com/album/lessself">Lessself by Dijksterhuis</a></iframe>
-<iframe width="45%" height="67%" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/441228&color=%23666600&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <div class="result">
+      <iframe style="width:98%; height:20%;padding-left: 1%; padding-right: 1%;" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F" frameborder="0" ></iframe>
+      <br>
+      <iframe style="padding-left: 1%; padding-right: 1%; border: 0; width: 49%; height: 250px;" src="https://bandcamp.com/EmbeddedPlayer/album=1434351241/size=large/bgcol=ffffff/linkcol=666600/artwork=small/transparent=true/" seamless><a href="http://dijksterhuis.bandcamp.com/album/lessself">Lessself by Dijksterhuis</a></iframe><iframe style="width:49%;height:250px;padding-left: 1%; padding-right: 1%;scrolling:yes;border:0;allow:autoplay;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/441228&color=%23666600&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    </div>
   </div>
+  <div class="smallblock">
+    <div class="command">
+      <br>
+      <h1 class="subheading">quit</h1>
+    </div>
+    </div>
+  
 </body>
 </html>
