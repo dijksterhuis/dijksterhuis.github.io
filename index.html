@@ -9,6 +9,10 @@ body {
     font-size: 150%;
 }
 
+p, h1, h2 {
+  text-align:left;
+}
+
 div.root {
   background-color: black;
   position: fixed;
@@ -16,19 +20,18 @@ div.root {
   width: 100%; 
   z-index:5;
   border-bottom: 1px blue;
-  padding-left: 1%;
 }
 
 h1{
   font-family: 'Lucida Console', Monaco, monospace;
   font-size:100%;
   color:white;
+  padding-left:2%;
 }
 
 h2{
   font-family: 'Lucida Console', Monaco, monospace;
   font-size:100%;
-  text-align:left;
   font-weight:1000;
   color: white;
 }
@@ -39,12 +42,12 @@ a {
 
 div.block {
   width:100%;
-  height:1400px;
+  height:1000px;
 }
 
 div.bigblock {
   width:100%;
-  height:2300px;
+  height:2600px;
 }
 
 div.command {
@@ -53,29 +56,28 @@ div.command {
   z-index:20;
   top:0;
   text-align:right;
-  padding-left:50%;
+  padding-left:66%;
   padding-top:1px;
 }
 
 div.smallresult {
-  width:50%;
+  width:66%;
   z-index:-20;
-  text-align:left;
   /*
   position:relative;
   position:-webkit-sticky;
   */
   padding-top:56%;
   padding-bottom:5%;
-  padding-left:1%;
+  padding-left:3%;
   padding-right:1%;
   top:0;
 }
 
 div.bigresult {
-  width:100%;
+  width:66%;
   z-index:-25;
-  padding-top:5%;
+  padding-top:55%;
   padding-bottom:5%;
   padding-left:1%;
   padding-right:1%;
@@ -88,8 +90,8 @@ iframe {
   padding-left: 1%; 
   padding-right: 1%; 
   padding-top:15%;
-  height: 750px;
-  width: 50%; 
+  height: 675px;
+  width: 100%; 
   border:0;
   z-index:-30;
 }
@@ -102,7 +104,7 @@ iframe {
 
 <body>
   <div class="root" >
-    <h1 style="text-align:left">[dijksterhuis@dundee ~] $:</h1>
+    <h1>[dijksterhuis@dundee ~] $:</h1>
   </div>
   
   <div class ="block" style="height:800px;">
@@ -122,9 +124,9 @@ iframe {
     </div>
   
     <div class="smallresult">
-        <p> PhD research candidate @ University of Dundee</p>
-        <p> Researching the security of Audio Recognition models</p>
-        <p> Makes weird electronic music & ambient-ish mixtape things</p>
+        <p>PhD research candidate @ University of Dundee</p>
+        <p>Researching the security of Audio Recognition models</p>
+        <p>Makes weird electronic music & ambient-ish mixtape things</p>
     </div>
     <br>
     <br>
@@ -151,11 +153,9 @@ iframe {
     </div>  
   
     <div class="bigresult">
-<iframe class="clouds" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F"></iframe>
-<iframe class="clouds" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/441228&color=%23666600&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-        
-<br><br><br>    
-        <iframe class="clouds" src="https://bandcamp.com/EmbeddedPlayer/album=1434351241/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="http://dijksterhuis.bandcamp.com/album/lessself">Lessself by Dijksterhuis</a></iframe>
+<iframe style="width:70%;" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F"></iframe>
+<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/441228&color=%23666600&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1434351241/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="http://dijksterhuis.bandcamp.com/album/lessself">Lessself by Dijksterhuis</a></iframe>
         
     </div>
   </div>
@@ -175,6 +175,6 @@ iframe {
 
     
     </div>
-  
+    <p style="text-align:right;padding-right:3%;">42</p>
 </body>
 </html>
