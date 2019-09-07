@@ -15,7 +15,7 @@
       font-color: black;
       font-size: 125%;
   }
-
+  
   p, h1, h2 {
     text-align:left;
   }
@@ -25,46 +25,46 @@
     color:white;
     font-size:100%;
   }
-
+  
+  h1{
+    padding-left:2%;
+  }
+  
+  a {
+    color: #666000;
+  }
+  
   div.root {
     background-color: black;
     position: fixed;
     top: 0; 
     width: 100%; 
     z-index:5;
-    border-bottom: 1px blue;
   }
-
-  h1{
-    padding-left:2%;
-  }
-
-  a {
-    color: #666000;
-  }
-
-  div.block {
-    width:100%;
-    height:1000px;
-    padding-top:2%;
-  }
-
-  div.bigblock {
-    width:100%;
-    height:2600px;
-    padding-top:2%;
-  }
-
+  
   div.command {
     position:sticky;
     position:-webkit-sticky;
-    z-index:20;
+    z-index:5;
     top:0;
     text-align:right;
     padding-left:66%;
     padding-top:1px;
   }
-
+  
+  div.block, div.bigblock {
+    width:100%;
+    padding-top:2%;
+  }
+  
+  div.block {
+    height:1000px;
+  }
+  
+  div.bigblock {
+    height:2400px;
+  }
+  
   div.result {
     width:66%;
     z-index:-20;
@@ -74,7 +74,7 @@
     padding-right:1%;
     top:0;
   }
-
+  
   iframe {
     padding-left: 1%; 
     padding-right: 1%; 
@@ -134,14 +134,14 @@
     <div class="command">
       <h2>play</h2>
     </div>  
-    <div class="result">
-<iframe style="width:70%;" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F"></iframe>
+    <div class="result" style="padding-top:42%;">
+<iframe style="height:300px;" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F"></iframe>
 <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/441228&color=%23666600&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1434351241/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="http://dijksterhuis.bandcamp.com/album/lessself">Lessself by Dijksterhuis</a></iframe>
     </div>
   </div>
   
-  <div class="bigblock">
+  <div class="block">
     <div class="command">
       <h2>logout</h2>
     </div>
@@ -154,6 +154,13 @@
         <p> [Process completed]</p>
     </div>
   </div>
-  <p style="text-align:right;padding-right:3%;">42</p>
+  <div class="block">
+  <div class="command">
+    <h2>douglas</h2>
+  </div>
+  <div class="result" style="width:100%;">
+    <p style="text-align:right;padding-right:3%;">42</p>
+  </div>
+</div>
 </body>
 </html>
