@@ -1,102 +1,109 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+  <title>[dijksterhuis@dundee ~] $: whoami</title>
+</head>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <style>
-body { 
-    background-color: #FFFFFF;
+  
+  body { 
+      background-color: #FFFFFF;
+      font-family: 'Lucida Console', Monaco, monospace;
+      font-color: black;
+      font-size: 125%;
+  }
+
+  p, h1, h2 {
+    text-align:left;
+  }
+
+  div.root {
+    background-color: black;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index:5;
+    border-bottom: 1px blue;
+  }
+
+  h1{
     font-family: 'Lucida Console', Monaco, monospace;
-    font-color: black;
-    font-size: 125%;
-}
+    font-size:100%;
+    color:white;
+    padding-left:2%;
+  }
 
-p, h1, h2 {
-  text-align:left;
-}
+  h2{
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size:100%;
+    font-weight:1000;
+    color: white;
+  }
 
-div.root {
-  background-color: black;
-  position: fixed;
-  top: 0; 
-  width: 100%; 
-  z-index:5;
-  border-bottom: 1px blue;
-}
+  a {
+    color: #666000;
+  }
 
-h1{
-  font-family: 'Lucida Console', Monaco, monospace;
-  font-size:100%;
-  color:white;
-  padding-left:2%;
-}
+  div.block {
+    width:100%;
+    height:1000px;
+  }
 
-h2{
-  font-family: 'Lucida Console', Monaco, monospace;
-  font-size:100%;
-  font-weight:1000;
-  color: white;
-}
+  div.bigblock {
+    width:100%;
+    height:2600px;
+  }
 
-a {
-  color: #666000;
-}
+  div.command {
+    position:sticky;
+    position:-webkit-sticky;
+    z-index:20;
+    top:0;
+    text-align:right;
+    padding-left:66%;
+    padding-top:1px;
+  }
 
-div.block {
-  width:100%;
-  height:1000px;
-}
+  div.smallresult {
+    width:66%;
+    z-index:-20;
+    /*
+    position:relative;
+    position:-webkit-sticky;
+    */
+    padding-top:56%;
+    padding-bottom:5%;
+    padding-left:3%;
+    padding-right:1%;
+    top:0;
+  }
 
-div.bigblock {
-  width:100%;
-  height:2600px;
-}
-
-div.command {
-  position:sticky;
-  position:-webkit-sticky;
-  z-index:20;
-  top:0;
-  text-align:right;
-  padding-left:66%;
-  padding-top:1px;
-}
-
-div.smallresult {
-  width:66%;
-  z-index:-20;
-  /*
-  position:relative;
-  position:-webkit-sticky;
-  */
-  padding-top:56%;
-  padding-bottom:5%;
-  padding-left:3%;
-  padding-right:1%;
-  top:0;
-}
-
-div.bigresult {
-  width:66%;
-  z-index:-25;
-  padding-top:55%;
-  padding-bottom:5%;
-  padding-left:1%;
-  padding-right:1%;
-  top:0;
-}
+  div.bigresult {
+    width:66%;
+    z-index:-25;
+    padding-top:55%;
+    padding-bottom:5%;
+    padding-left:1%;
+    padding-right:1%;
+    top:0;
+  }
 
 
 
-iframe {
-  padding-left: 1%; 
-  padding-right: 1%; 
-  padding-top:15%;
-  height: 675px;
-  width: 100%; 
-  border:0;
-  z-index:-30;
-}
-
-</style
+  iframe {
+    padding-left: 1%; 
+    padding-right: 1%; 
+    padding-top:15%;
+    height: 675px;
+    width: 100%; 
+    border:0;
+    z-index:-30;
+  }
+  
+</style>
 
 <body>
   <div class="root" >
@@ -118,7 +125,6 @@ iframe {
     <div class="command">
       <h2 class="subheading">whoami</h2>
     </div>
-  
     <div class="smallresult">
         <p>PhD research candidate @ University of Dundee</p>
         <p>Researching the security of Audio Recognition models</p>
@@ -132,7 +138,6 @@ iframe {
     <div class="command">
       <h2 class="subheading">mail | lynx</h2>
     </div>
-  
     <div class="smallresult">
       <p>Mail ::: <a href="mailto:michael.l.robeson@gmail.com">General</a> /// <a href="mailto:mrobeson@dundee.ac.uk">University</a> /// <a href="mailto:dijksterhuis.music@gmail.com">Music</a></p>
       <p>GitHub ::: <a href="https://github.com/dijksterhuis">dijksterhuis</a></p>
@@ -147,19 +152,17 @@ iframe {
     <div class="command">
       <h2 class="subheading">play</h2>
     </div>  
-  
     <div class="bigresult">
 <iframe style="width:70%;" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F"></iframe>
 <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/441228&color=%23666600&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1434351241/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="http://dijksterhuis.bandcamp.com/album/lessself">Lessself by Dijksterhuis</a></iframe>
-        
     </div>
   </div>
+  
   <div class="bigblock">
     <div class="command">
       <h2 class="subheading">logout</h2>
     </div>
-    
     <div class="smallresult">
         <p> Saving session...</p>
         <p> ...copying shared history...</p>
@@ -168,9 +171,7 @@ iframe {
         <br>
         <p> [Process completed]</p>
     </div>
-
-    
-    </div>
-    <p style="text-align:right;padding-right:3%;">42</p>
+  </div>
+  <p style="text-align:right;padding-right:3%;">42</p>
 </body>
 </html>
