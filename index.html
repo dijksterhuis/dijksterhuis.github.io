@@ -9,6 +9,10 @@
 </head>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+<link rel="manifest" href="fav/site.webmanifest">
 
 <style>
   
@@ -17,21 +21,33 @@
       font-family: 'Lucida Console', Monaco, monospace;
       font-color: black;
       font-size: 100%;
+      align:center;
+      margin:auto;
+      width:90%;
+
   }
   
-  p, h1, h2 {
-    text-align:left;
+  
+  p {
+    text-align:center;
+    font-size:2vh;
   }
   
-  h1, h2 {
+  h1, h2{
     font-family: 'Lucida Console', Monaco, monospace;
     color:white;
-    font-size:75%;
+    font-size:2vh;
   }
   
   h1{
+    text-align:left;
     padding-left:2%;
   }
+  h2{
+    text-align:right;
+    padding-right:2%;
+  }
+
   
   a {
     color: #666000;
@@ -44,6 +60,9 @@
     top: 0; 
     width: 100%; 
     z-index:5;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   
   div.command {
@@ -51,40 +70,32 @@
     position:-webkit-sticky;
     z-index:5;
     top:0;
-    text-align:right;
-    padding-left:66%;
+    right:0;
+    height:65vh;
+    width:100%;
     padding-top:1px;
+    padding-bottom:5vh;
   }
   
   div.block, div.bigblock {
+    display: normal;
     width:100%;
-    padding-top:2%;
+
   }
   
   div.block {
-    height:1050px;
+    height:110vh;
+    padding-top:0vh;
   }
   
-  div.bigblock {
-    height:2400px;
-  }
   
   div.result {
-    width:100%;
     z-index:-20;
-    padding-top:55%;
-    padding-bottom:5%;
-    padding-left:3%;
-    padding-right:3%;
     top:0;
   }
   
   iframe {
-    padding-left: 1%; 
-    padding-right: 1%; 
-    padding-top:15%;
-    height: 675px;
-    width: 100%; 
+    width:50%;
     border:0;
     z-index:-30;
   }
@@ -96,33 +107,33 @@
     <h1>[dijksterhuis@dundee ~] $:</h1>
   </div>
   
-  <div class ="block" style="height:800px;padding-top:0%;">
+  <div class ="block" style="">
     <div class="command">
       <h2>login</h2>
     </div>
-    <div class="result" style="padding-top:25%;">
+    <div class="result" style="">
         <p> login: dijksterhuis</p>
         <p> Password: &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;<img src="cursor.gif"></p>
     </div>
   </div>
   
-  
+
   <div class ="block">
     <div class="command">
       <h2>whoami</h2>
     </div>
     <div class="result">
-        <p>PhD research candidate @ University of Dundee</p>
-        <p>Researching the security of Audio Recognition models</p>
-        <p>Makes weird electronic music & ambient-ish mixtape things</p>
+        <p>phd student @ university of dundee</p>
+        <p>researching the security of ctc Speech Recognition models</p>
+        <p>also makes weird electronic music & ambient-ish mixtape things</p>
     </div>
     <br>
     <br>
   </div>
-  
+
   <div class ="block">
     <div class="command">
-      <h2>mail | lynx</h2>
+      <h2>lynx && mail</h2>
     </div>
     <div class="result">
       <p>GitHub ::: <a href="https://github.com/dijksterhuis" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
@@ -132,46 +143,47 @@
       <p>Bandcamp ::: <a href="https://dijksterhuis.bandcamp.com" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
       <p>Soundcloud ::: <a href="https://soundcloud.com/dijksterhuis" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
       <p>Mixcloud ::: <a href="https://mixcloud.com/dijksterhuis" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
-      <p>Mail ::: <a href="mailto:michael.l.robeson@gmail.com">/general</a> <a href="mailto:mrobeson@dundee.ac.uk">/phd</a> <a href="mailto:dijksterhuis.music@gmail.com">/music</a></p>
-      <p>Data Engineer MSc ::: <a href="https://www.dundee.ac.uk/study/pg/data-engineering/" target="_blank" rel="noopener noreferrer">/course</a> <a href="SymNetsFinal/" target="_blank" rel="noopener noreferrer">/dissertation</a></p>
+      <p>Data Engineer MSc ::: <a href="https://www.dundee.ac.uk/study/pg/data-engineering/" target="_blank" rel="noopener noreferrer">/course</a></p>
       <br>
-      <!--<p>Linkedin ::: <a href="https://www.linkedin.com/in/mikerobeson/">mikerobeson</a></p>-->
+      <p>Mail ::: <a href="mailto:michael.l.robeson@gmail.com">/general</a> <a href="mailto:mrobeson@dundee.ac.uk">/phd</a> <a href="mailto:dijksterhuis.music@gmail.com">/music</a></p>
+      <br>
     </div>
   <br>
   <br>
-  </div>
-  
-  <div class="bigblock">
-    <div class="command">
-      <h2>play</h2>
-    </div>  
-    <div class="result" style="padding-top:42%;">
-<iframe style="height:400px;" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2Fdijksterhuis%2Fdig-100319-sunday-afternoons-in-the-cold-sun-of-the-world%2F"></iframe>
-<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/441228&color=%23666600&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<iframe src="https://bandcamp.com/EmbeddedPlayer/album=1434351241/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="http://dijksterhuis.bandcamp.com/album/lessself">Lessself by Dijksterhuis</a></iframe>
-    </div>
   </div>
   
   <div class="block">
     <div class="command">
       <h2>logout</h2>
     </div>
-    <div class="result" style="padding-top:50%;">
+    <div class="result">
         <p> Saving session...</p>
         <p> ...copying shared history...</p>
-        <p> ...saving history...truncating history files...</p>
+        <p> ...saving history...</p>
+        <p> ...truncating history files...</p>
         <p> ...completed.</p>
         <br>
         <p> [Process completed]</p>
     </div>
   </div>
-  <div class="bigblock">
-  <div class="command">
-    <h2>douglas</h2>
+  
+  <div class="block">
+    <div class="command">
+      <h2>don't panic</h2>
+    </div>
+    <div class="result" style="">
+      <p>42</p>
+    </div>
   </div>
-  <div class="result" style="width:100%;">
-    <p style="text-align:right;padding-right:3%;">42</p>
+  
+  <div class="block">
+    <div class="command">
+      <h2></h2>
+    </div>
+    <div class="result" style="">
+      <p></p>
+    </div>
   </div>
-</div>
+  
 </body>
 </html>
