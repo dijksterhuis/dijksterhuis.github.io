@@ -69,9 +69,10 @@
     position:sticky;
     position:-webkit-sticky;
     z-index:5;
+    padding-left:100vmin;
     top:0;
     right:0;
-    height:65vh;
+    height:1vh;
     width:100%;
     padding-top:1px;
     padding-bottom:5vh;
@@ -84,7 +85,7 @@
   }
   
   div.block {
-    height:110vh;
+    height:100vmin;
     padding-top:0vh;
   }
   
@@ -92,6 +93,7 @@
   div.result {
     z-index:-20;
     top:0;
+    height:10vmin;
   }
   
   iframe {
@@ -106,69 +108,82 @@
   <div class="root" >
     <h1>[dijksterhuis@dundee ~] $:</h1>
   </div>
-  
+
   <div class ="block" style="">
     <div class="command">
       <h2>login</h2>
     </div>
     <div class="result" style="">
-        <p> login: dijksterhuis</p>
-        <p> password: &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;<img src="cursor.gif"></p>
+      <p> login: <img src="cursor.gif"></p>
+      <p> password:</p>
+    </div>
+  </div>
+
+  
+  <div class ="block" style="">
+    <div class="result" style="">
+      <p> login: dijksterhuis</p>
+      <p> password: &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;<img src="cursor.gif"></p>
+    </div>
+    <div class="command">
+      <h2>whoami</h2>
     </div>
   </div>
   
 
   <div class ="block">
-    <div class="command">
-      <h2>whoami</h2>
-    </div>
     <div class="result">
-        <p>phd student @ university of dundee</p>
-        <p>researching the security of ctc speech recognition models</p>
-        <p>also makes weird electronic music & ambient-ish mixtape things</p>
-        <p>lives in xfce on fedora/ubuntu, tmux sessions and python repls</p>
+        <p>phd student researching the security of ctc speech recognition models</p>
+        <p>lives in xfce on ubuntu, tmux sessions, jenkins pipelines and python repls</p>
+        <p>makes weird electronic music & ambient-ish mixtapes</p>
+        <br>
         <p>perpetually looking for that cup of coffee i made 5 minutes ago</p>
     </div>
-  </div>
-
-  <div class ="block">
     <div class="command">
       <h2>mail</h2>
     </div>
+    
+  </div>
+
+  <div class ="block">
     <div class="result">
       <p>mail ::: <a href="mailto:michael.l.robeson@gmail.com">/general</a> <a href="mailto:mrobeson@dundee.ac.uk">/phd</a> <a href="mailto:dijksterhuis.music@gmail.com">/music</a></p>
+    </div>
+    <div class="command">
+      <h2>grep -i work</h2>
     </div>
   </div>
 
   <div class ="block">
-    <div class="command">
-      <h2>grep -i tech</h2>
-    </div>
     <div class="result">
       <p>github ::: <a href="https://github.com/dijksterhuis" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
       <p>dockerhub ::: <a href="https://hub.docker.com/u/dijksterhuis" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
       <p>stack overflow ::: <a href="https://stackoverflow.com/users/5945794/dijksterhuis" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
       <p>hacker news ::: <a href="https://news.ycombinator.com/user?id=dijksterhuis" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
-      <p>data engineering msc ::: <a href="https://www.dundee.ac.uk/study/pg/data-engineering/" target="_blank" rel="noopener noreferrer">/uod</a></p>
+      <p>linkedin ::: <a href="https://www.linkedin.com/in/mikerobeson/" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
+      <p>msc ::: <a href="https://www.dundee.ac.uk/study/pg/data-engineering/" target="_blank" rel="noopener noreferrer">/uod</a></p>
+      <p>phd ::: <a href="https://cvip.computing.dundee.ac.uk/" target="_blank" rel="noopener noreferrer">/cvip</a></p>
     </div>
+    <div class="command">
+      <h2>grep -i play</h2>
+    </div>
+    
   </div>
   
   <div class ="block">
-    <div class="command">
-      <h2>grep -i music</h2>
-    </div>
     <div class="result">
       <p>discogs ::: <a href="https://discogs.com/user/dijksterhuis/collection" target="_blank" rel="noopener noreferrer">/djksterhuis</a></p>
       <p>bandcamp ::: <a href="https://dijksterhuis.bandcamp.com" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
       <p>soundcloud ::: <a href="https://soundcloud.com/dijksterhuis" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
       <p>mixcloud ::: <a href="https://mixcloud.com/dijksterhuis" target="_blank" rel="noopener noreferrer">/dijksterhuis</a></p>
     </div>
-  </div>
-  
-  <div class="block">
     <div class="command">
       <h2>logout</h2>
     </div>
+    
+  </div>
+  
+  <div class="block">
     <div class="result">
         <p> Saving session...</p>
         <p> ...copying shared history...</p>
@@ -178,11 +193,15 @@
         <br>
         <p> [Process completed]</p>
     </div>
+    <div class="command">
+      <h2>don't panic</h2>
+    </div>
+    
   </div>
   
   <div class="block">
     <div class="command">
-      <h2>don't panic</h2>
+      <h2></h2>
     </div>
     <div class="result" style="">
       <p>42</p>
